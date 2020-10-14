@@ -35,7 +35,7 @@ import s4 from "../images/s4.jpg"
 import s5 from "../images/s5.jpg"
 import s6 from "../images/s6.jpg"
 import s7 from "../images/s7.jpg"
-import s8 from "../images/s8.jpg"
+
 import s9 from "../images/s9.jpg"
 import s10 from "../images/s10.jpg"
 import s11 from "../images/s11.jpg"
@@ -218,9 +218,7 @@ export default function (props) {
                 <SwiperSlide>
                   <img src={s7} alt="Suliko img4" />
                 </SwiperSlide>
-                <SwiperSlide>
-                  <img src={s8} alt="Suliko img4" />
-                </SwiperSlide>
+
                 <SwiperSlide>
                   <img src={s9} alt="Suliko img4" />
                 </SwiperSlide>
