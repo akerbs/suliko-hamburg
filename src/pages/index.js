@@ -95,7 +95,7 @@ export default function (props) {
         </description>
       </Helmet>
       <Container
-        id="main"
+        id="home"
         style={{
           width: "100vw",
           maxWidth: "100vw",
@@ -198,7 +198,7 @@ export default function (props) {
               </Swiper>
             </Container>
             <br /> <br />
-            <Container id="about-us" className="aboutUsWrapper">
+            <Container id="welcome" className="aboutUsWrapper">
               <AboutUs />
             </Container>
             <br /> <br />

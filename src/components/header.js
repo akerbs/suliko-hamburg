@@ -226,19 +226,19 @@ function Header(props) {
         >
           <Toolbar className={classes.toolbar}>
             <Hidden xsDown>
-              <Link to="/">
+              <a href="#home">
                 <img src={Logo2} alt="logo" className={classes.logo2Img} />
-              </Link>
+              </a>
             </Hidden>
 
-            <Link to="/">
+            <a href="#home">
               <Hidden smUp>
                 <img src={Logo1} alt="logo" className={classes.logoImg} />
               </Hidden>
               <Hidden xsDown>
                 <img src={Logo1Plus2} alt="logo" className={classes.logoImg} />
               </Hidden>
-            </Link>
+            </a>
 
             <div style={{ display: "flex", justifyContent: "column" }}>
               <LangSwAkk />

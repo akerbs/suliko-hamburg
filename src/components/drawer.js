@@ -143,7 +143,7 @@ export default function DrawerTop(props) {
         }}
       >
         <div style={{ overflow: "hidden" }}>
-          <Slide in={props.open} timeout={500} direction="up">
+          <Slide in={props.open} timeout={700} direction="up">
             <div>
               <div className={classes.drawerHeader}>
                 <div className={classes.mediaIcons}>
@@ -206,8 +206,8 @@ export default function DrawerTop(props) {
         <div style={{ overflow: "hidden" }}>
           <Slide in={props.open} timeout={900} direction="up">
             <div>
-              <Link
-                to="#home"
+              <a
+                href="#home"
                 className={classes.drawerItem}
                 activeClassName={classes.active}
                 onClick={props.onClose}
@@ -229,15 +229,15 @@ export default function DrawerTop(props) {
                     }
                   />
                 </ListItem>
-              </Link>
+              </a>
             </div>
           </Slide>
         </div>
         <div style={{ overflow: "hidden" }}>
-          <Slide in={props.open} timeout={1000} direction="up">
+          <Slide in={props.open} timeout={950} direction="up">
             <div>
-              <Link
-                to="#about-us"
+              <a
+                href="#welcome"
                 className={classes.drawerItem}
                 activeClassName={classes.active}
                 onClick={props.onClose}
@@ -259,15 +259,15 @@ export default function DrawerTop(props) {
                     }
                   />
                 </ListItem>
-              </Link>
+              </a>
             </div>
           </Slide>
         </div>
         <div style={{ overflow: "hidden" }}>
-          <Slide in={props.open} timeout={1100} direction="up">
+          <Slide in={props.open} timeout={1000} direction="up">
             <div>
-              <Link
-                to="#menu"
+              <a
+                href="#menu"
                 className={classes.drawerItem}
                 activeClassName={classes.active}
                 onClick={props.onClose}
@@ -289,15 +289,15 @@ export default function DrawerTop(props) {
                     }
                   />
                 </ListItem>
-              </Link>
+              </a>
             </div>
           </Slide>
         </div>
         <div style={{ overflow: "hidden" }}>
-          <Slide in={props.open} timeout={1200} direction="up">
+          <Slide in={props.open} timeout={1050} direction="up">
             <div>
-              <Link
-                to="#contact"
+              <a
+                href="#contact"
                 className={classes.drawerItem}
                 activeClassName={classes.active}
                 onClick={props.onClose}
@@ -319,7 +319,7 @@ export default function DrawerTop(props) {
                     }
                   />
                 </ListItem>
-              </Link>
+              </a>
             </div>
           </Slide>
         </div>
