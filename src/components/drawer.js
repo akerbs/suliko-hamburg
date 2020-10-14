@@ -8,6 +8,7 @@ import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Logo2 from "../images/Logo2.png"
 import CloseIcon from "@material-ui/icons/Close"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -267,7 +268,7 @@ export default function DrawerTop(props) {
           <Slide in={props.open} timeout={1000} direction="up">
             <div>
               <a
-                href="#menu"
+                href="/#menu"
                 className={classes.drawerItem}
                 activeClassName={classes.active}
                 onClick={props.onClose}

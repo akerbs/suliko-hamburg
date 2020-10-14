@@ -8,6 +8,7 @@ import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
 import { ThemeProvider } from "@material-ui/core/styles"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Logo1Plus2 from "../images/Logo1Plus2.gif"
 import Logo1 from "../images/Logo1.gif"
 import Logo2 from "../images/Logo2.png"
@@ -226,19 +227,18 @@ function Header(props) {
         >
           <Toolbar className={classes.toolbar}>
             <Hidden xsDown>
-              <a href="#home">
+              <AnchorLink to="/#home" title="Home">
                 <img src={Logo2} alt="logo" className={classes.logo2Img} />
-              </a>
+              </AnchorLink>
             </Hidden>
-
-            <a href="#home">
+            <AnchorLink to="/#home" title="Home">
               <Hidden smUp>
                 <img src={Logo1} alt="logo" className={classes.logoImg} />
               </Hidden>
               <Hidden xsDown>
                 <img src={Logo1Plus2} alt="logo" className={classes.logoImg} />
               </Hidden>
-            </a>
+            </AnchorLink>
 
             <div style={{ display: "flex", justifyContent: "column" }}>
               <LangSwAkk />
