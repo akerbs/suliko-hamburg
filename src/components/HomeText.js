@@ -57,16 +57,16 @@ export default function AboutUs(props) {
       )}
       {actLanguage === "DEU" && (
         <div>
-          <Typography variant="h6">Unsere lieben Suliko-Freunde,</Typography>
+          <Typography variant="h6">Liebe Suliko-Freunde,</Typography>
           <br />
 
           <Typography id="text2Big" variant="body1">
-            Vielen Dank für Ihren Besuch auf unserer Website. Trotz der
-            schwierigen Zeit bleiben wir an Ihrer Seite und wünschen, dass die
-            Bewohner der schönen Stadt Hamburg und ihre Gäste, die georgische
-            Küche probiert haben und zu ihren Liebhabern geworden sind, in
-            Zukunft eine Vielzahl von Gerichten und traditionellen Weinen
-            genießen können. <br /> <br />
+            Vielen Dank für Ihren Besuch auf unserer Website. Trotz schwierigr
+            Zeit bleiben wir an Ihrer Seite und wünschen, dass die Bewohner der
+            schönen Stadt Hamburg und ihre Gäste, die georgische Küche probiert
+            haben und zu ihren Liebhabern geworden sind, und auch in Zukunft
+            eine Vielzahl von Gerichten und traditionellen Weinen genießen
+            können. <br /> <br />
             Weitere Gerichte sowie eine aktualisierte{" "}
             <Link
               to="#menu"
