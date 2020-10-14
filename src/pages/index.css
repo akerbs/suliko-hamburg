@@ -1,0 +1,62 @@
+.bgImg {
+  width: 100%;
+  height: auto;
+}
+
+.mapWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+  padding-top: 50%;
+}
+.map {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 600px;
+  border: 0px;
+  margin-top: -150px;
+}
+
+.aboutUsWrapper {
+  padding-top: 170px;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutUsWrapper {
+    padding-top: 110px;
+  }
+}
+
+.menuWrapper {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .menuWrapper {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}
+
+/* .menuButton {
+  background-color: rgba(249, 234, 207);
+  color: rgba(133, 26, 29);
+  margin: 10px;
+} */
+
+.contactWrapper {
+  padding: 150px 15px 10px 15px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .contactWrapper {
+    padding: 100px 15px 10px 15px;
+  }
+}
