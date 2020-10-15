@@ -63,7 +63,7 @@ export default function (props) {
   }
 
   useEffect(() => {
-    inView("#top").once("enter", startShowAfterLoading)
+    inView("#slider-first").once("enter", startShowAfterLoading)
   })
 
   const handleOpen = () => {
@@ -116,7 +116,7 @@ export default function (props) {
           padding: 0,
         }}
       >
-        <Header id="top" />
+        <Header />
 
         <Container
           id="slider-first"
