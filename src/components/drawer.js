@@ -144,7 +144,7 @@ export default function DrawerTop(props) {
         }}
       >
         <div style={{ overflow: "hidden" }}>
-          <Slide in={props.open} timeout={700} direction="up">
+          <Slide in={props.open} timeout={800} direction="up">
             <div>
               <div className={classes.drawerHeader}>
                 <div className={classes.mediaIcons}>
@@ -196,7 +196,7 @@ export default function DrawerTop(props) {
         </div>
 
         <div style={{ overflow: "hidden" }}>
-          <Slide in={props.open} timeout={700} direction="up">
+          <Slide in={props.open} timeout={800} direction="up">
             <div>
               <ListItem className={classes.listItem}>
                 <img src={menu} alt="img" className={classes.menuImg} />
@@ -325,7 +325,7 @@ export default function DrawerTop(props) {
           </Slide>
         </div>
         <div style={{ overflow: "hidden" }}>
-          <Slide in={props.open} timeout={700} direction="up">
+          <Slide in={props.open} timeout={800} direction="up">
             <div>
               <ListItem className={classes.listItem}>
                 <img src={menu} alt="img" className={classes.menuImg} />
@@ -334,7 +334,7 @@ export default function DrawerTop(props) {
           </Slide>
         </div>
         <div style={{ overflow: "hidden" }}>
-          <Slide in={props.open} timeout={700} direction="up">
+          <Slide in={props.open} timeout={800} direction="up">
             <div>
               <div className={classes.imgWrapper}>
                 <img src={Logo2} alt="logo" className={classes.img} />
