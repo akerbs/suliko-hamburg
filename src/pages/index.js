@@ -35,7 +35,7 @@ import s4 from "../images/s4.jpg"
 import s5 from "../images/s5.jpg"
 import s6 from "../images/s6.jpg"
 import s7 from "../images/s7.jpg"
-
+import s8 from "../images/s8.jpg"
 import s9 from "../images/s9.jpg"
 import s10 from "../images/s10.jpg"
 import s11 from "../images/s11.jpg"
@@ -44,7 +44,6 @@ import s13 from "../images/s13.jpg"
 import s14 from "../images/s14.jpg"
 import s15 from "../images/s15.jpg"
 import s16 from "../images/s16.jpg"
-import s17 from "../images/s17.jpg"
 
 import bgV1 from "../images/bgV1.jpg"
 import bgV2 from "../images/bgV2.jpg"
@@ -210,41 +209,41 @@ export default function (props) {
                   <img src={s4} alt="Suliko img4" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s5} alt="Suliko img4" />
+                  <img src={s5} alt="Suliko img5" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s6} alt="Suliko img4" />
+                  <img src={s6} alt="Suliko img6" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s7} alt="Suliko img4" />
+                  <img src={s7} alt="Suliko img7" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={s8} alt="Suliko img8" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={s9} alt="Suliko img4" />
+                  <img src={s9} alt="Suliko img9" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s10} alt="Suliko img4" />
+                  <img src={s10} alt="Suliko img10" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s11} alt="Suliko img4" />
+                  <img src={s11} alt="Suliko img11" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s12} alt="Suliko img4" />
+                  <img src={s12} alt="Suliko img12" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s13} alt="Suliko img4" />
+                  <img src={s13} alt="Suliko img13" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s14} alt="Suliko img4" />
+                  <img src={s14} alt="Suliko img14" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s15} alt="Suliko img4" />
+                  <img src={s15} alt="Suliko img15" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s16} alt="Suliko img4" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={s17} alt="Suliko img4" />
+                  <img src={s16} alt="Suliko img16" />
                 </SwiperSlide>
               </Swiper>
             </Container>
