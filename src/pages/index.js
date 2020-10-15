@@ -133,17 +133,9 @@ export default function (props) {
               preventInteractionOnTransition={true}
             >
               <SwiperSlide>
-                {/* <Img
-                  fluid={props.data.bgV1.childImageSharp.fluid}
-                  alt="Suliko 1"
-                /> */}
                 <img src={bgV1} alt="Suliko 1" />
               </SwiperSlide>
               <SwiperSlide>
-                {/* <Img
-                  fluid={props.data.bgV2.childImageSharp.fluid}
-                  alt="Suliko 2"
-                /> */}
                 <img src={bgV2} alt="Suliko 2" />
               </SwiperSlide>
             </Swiper>
