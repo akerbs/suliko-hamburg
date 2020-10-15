@@ -84,7 +84,7 @@ export default function Contact(props) {
           <br />
           Mo- Do 12:00 - 15:00, 17:00 - 22:00 <br />
           Fr 12:00 - 15:00, 17:00 - 24:00 <br />
-          Sa 17:00 - 24:00 <br />
+          Sa 15:00 - 24:00 <br />
           Son 15:00 - 22:00 <br />
           <br />
         </Typography>
