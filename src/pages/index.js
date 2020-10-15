@@ -163,15 +163,16 @@ export default function (props) {
             </Swiper>
           )}
         </Container>
-        {showAfterLoading && (
-          <Container id="center">
-            <ReserveButton onOpen={handleOpen} />
-            <ReserveWindow onClose={handleClose} open={open} />
-            <br /> <br />
-            <Container id="home-text">
-              <HomeText />
-            </Container>
-            <br /> <br />
+
+        <Container id="center">
+          <ReserveButton onOpen={handleOpen} />
+          <ReserveWindow onClose={handleClose} open={open} />
+          <br /> <br />
+          <Container id="home-text">
+            <HomeText />
+          </Container>
+          <br /> <br />
+          {showAfterLoading && (
             <Container id="slider">
               <Swiper
                 pagination={{ clickable: true }}
@@ -239,16 +240,22 @@ export default function (props) {
                 </SwiperSlide>
               </Swiper>
             </Container>
-            <br /> <br />
+          )}
+          <br /> <br />
+          {showAfterLoading && (
             <Container id="welcome" className="aboutUsWrapper">
               <AboutUs />
             </Container>
-            <br /> <br />
+          )}
+          <br /> <br />
+          {showAfterLoading && (
             <Container id="press">
               {" "}
               <Press />{" "}
             </Container>
-            <br /> <br />
+          )}
+          <br /> <br />
+          {showAfterLoading && (
             <img
               id="menu"
               src={menu}
@@ -259,24 +266,31 @@ export default function (props) {
                 paddingTop: "100px",
               }}
             />
-            <br /> <br />
-            <br />
+          )}
+          <br /> <br />
+          <br />
+          {showAfterLoading && (
             <Container className="menuWrapper">
               <Menu />
             </Container>
-            <br /> <br />
+          )}
+          <br /> <br />
+          {showAfterLoading && (
             <img
               src={menu}
               alt="img"
               style={{ display: "block", margin: "0px auto" }}
             />
-            <br /> <br />
-            <br />
+          )}
+          <br /> <br />
+          <br />
+          {showAfterLoading && (
             <Container id="contact" className="contactWrapper">
               <Contact />
             </Container>
-          </Container>
-        )}
+          )}
+        </Container>
+
         {showAfterLoading && (
           <Container id="map" className="mapWrapper" maxWidth="lg">
             <iframe
