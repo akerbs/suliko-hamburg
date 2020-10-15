@@ -116,8 +116,8 @@ export default function (props) {
           padding: 0,
         }}
       >
-        <Header />
-        <div id="top" style={{ margin: 0, madding: 0 }}></div>
+        <Header id="top" />
+
         <Container
           id="slider-first"
           style={{ width: "100vw", maxWidth: "100vw", margin: 0, padding: 0 }}
