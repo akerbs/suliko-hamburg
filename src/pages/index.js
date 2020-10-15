@@ -163,18 +163,15 @@ export default function (props) {
             </Swiper>
           )}
         </Container>
-
-        <Container id="center">
-          {showAfterLoading && <ReserveButton onOpen={handleOpen} />}
-          {showAfterLoading && (
+        {showAfterLoading && (
+          <Container id="center">
+            <ReserveButton onOpen={handleOpen} />
             <ReserveWindow onClose={handleClose} open={open} />
-          )}
-          <br /> <br />
-          <Container id="home-text">
-            <HomeText />
-          </Container>
-          <br /> <br />
-          {showAfterLoading && (
+            <br /> <br />
+            <Container id="home-text">
+              <HomeText />
+            </Container>
+            <br /> <br />
             <Container id="slider">
               <Swiper
                 pagination={{ clickable: true }}
@@ -242,22 +239,16 @@ export default function (props) {
                 </SwiperSlide>
               </Swiper>
             </Container>
-          )}
-          <br /> <br />
-          {showAfterLoading && (
+            <br /> <br />
             <Container id="welcome" className="aboutUsWrapper">
               <AboutUs />
             </Container>
-          )}
-          <br /> <br />
-          {showAfterLoading && (
+            <br /> <br />
             <Container id="press">
               {" "}
               <Press />{" "}
             </Container>
-          )}
-          <br /> <br />
-          {showAfterLoading && (
+            <br /> <br />
             <img
               id="menu"
               src={menu}
@@ -268,31 +259,24 @@ export default function (props) {
                 paddingTop: "100px",
               }}
             />
-          )}
-          <br /> <br />
-          <br />
-          {showAfterLoading && (
+            <br /> <br />
+            <br />
             <Container className="menuWrapper">
               <Menu />
             </Container>
-          )}
-          <br /> <br />
-          {showAfterLoading && (
+            <br /> <br />
             <img
               src={menu}
               alt="img"
               style={{ display: "block", margin: "0px auto" }}
             />
-          )}
-          <br /> <br />
-          <br />
-          {showAfterLoading && (
+            <br /> <br />
+            <br />
             <Container id="contact" className="contactWrapper">
               <Contact />
             </Container>
-          )}
-        </Container>
-
+          </Container>
+        )}
         {showAfterLoading && (
           <Container id="map" className="mapWrapper" maxWidth="lg">
             <iframe
