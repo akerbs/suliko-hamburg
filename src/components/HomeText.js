@@ -1,9 +1,6 @@
 import React, { useContext, useState } from "react"
 import Typography from "@material-ui/core/Typography"
-import Button from "@material-ui/core/Button"
 import { LanguageContext } from "../components/layout"
-import { Link } from "gatsby"
-import { makeStyles, useTheme } from "@material-ui/core/styles"
 
 export default function AboutUs(props) {
   const { actLanguage } = useContext(LanguageContext)
@@ -30,19 +27,22 @@ export default function AboutUs(props) {
             стали ее ценителями, и в будущем могли наслаждаться разнообразными
             блюдами и традиционными винами. <br /> <br />
             Множество блюд, а также обновленную{" "}
-            <Link
-              to="#menu"
-              style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
+            <a
+              href="/#menu"
+              style={{
+                textDecoration: "none",
+                color: "rgba(133,26,29)",
+              }}
             >
-              винную карту
-            </Link>{" "}
+              <b>винную карту</b>
+            </a>{" "}
             Вы найдете в нашем новом{" "}
-            <Link
-              to="#menu"
+            <a
+              href="/#menu"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              меню
-            </Link>
+              <b>меню</b>
+            </a>
             . <br /> <br />
             <a
               target="_blank"
@@ -50,7 +50,7 @@ export default function AboutUs(props) {
               href="https://www.lieferando.de/suliko"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              Нажмите здесь, чтобы заказать доставку на дом.{" "}
+              <b>Нажмите здесь, чтобы заказать доставку на дом.</b>{" "}
             </a>
           </Typography>
         </div>
@@ -68,19 +68,19 @@ export default function AboutUs(props) {
             eine Vielzahl von Gerichten und traditionellen Weinen genießen
             können. <br /> <br />
             Weitere Gerichte sowie eine aktualisierte{" "}
-            <Link
-              to="#menu"
+            <a
+              href="/#menu"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              Weinkarte
-            </Link>{" "}
+              <b>Weinkarte</b>
+            </a>{" "}
             finden Sie in unserem neuen{" "}
-            <Link
-              to="#menu"
+            <a
+              href="/#menu"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              Menü.{" "}
-            </Link>
+              <b>Menü</b>.{" "}
+            </a>
             <br /> <br />
             <a
               target="_blank"
@@ -88,7 +88,7 @@ export default function AboutUs(props) {
               href="https://www.lieferando.de/suliko"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              Klicken Sie hier, um die Lieferung nach Hause zu bestellen.
+              <b>Klicken Sie hier, um die Lieferung nach Hause zu bestellen.</b>
             </a>
           </Typography>
         </div>
@@ -101,27 +101,27 @@ export default function AboutUs(props) {
           <br />
 
           <Typography id="text2Big" variant="body1">
-            დიდი მადლობა ჩვენი ვებ-გვერდის სტუმრობისთვის.მიუხედავათ რთული
-            პერიოდისა, ჩვენ თქვენ გვერდით ვრჩებით და ჩვენი სურვილია,რომ ულამაზეს
-            ქალაქ ჰამბურგის მაცხოვრებლებს და მის სტუმრებს, რომლებმაც ქართული
-            სამზარეულო დააგემოვნეს და მისი მოყვარულები გახდნენ, შეძლონ
-            მომავალშიც დატკბენ მრავალფეროვანი კერძებით და ტრადიციული ღვინოებით.
+            მადლობარომ ჩვენი ვებ-გვერდის ესტუმრეთ. მიუხედავათ რთული პერიოდისა,
+            ჩვენ თქვენ გვერდით ვრჩებით და გულახდილათ გვსურს, რომ ულამაზეს ქალაქ
+            ჰამბურგის მაცხოვრებლებს და მის სტუმრებს, რომლებმაც ჩვენთან ქართული
+            სამზარეულო დააგემოვნეს და მისი მოყვარულები გახდნენ,მომავალშიც
+            შეძლონდატკბენ ჩვენი მრავალფეროვანი კერძებით და ტრადიციული ღვინოებით.
             <br />
             <br />
             იხილეთ ჩვენ ახალი{" "}
-            <Link
-              to="#menu"
+            <a
+              href="/#menu"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              კერძების მენიუ
-            </Link>{" "}
-            უფრო მეტი კერძებით და ასევეე განვაახლებული{" "}
-            <Link
-              to="#menu"
+              <b>კერძების მენიუ</b>
+            </a>{" "}
+            და ასევე განაახლებული{" "}
+            <a
+              href="/#menu"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              სასმელების მენიუ
-            </Link>
+              <b>სასმელების მენიუ</b>
+            </a>
             .
             <br />
             <br />
@@ -131,7 +131,7 @@ export default function AboutUs(props) {
               href="https://www.lieferando.de/suliko"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              კერძების შეკვეთისთვის დააწექით აქ.{" "}
+              <b>კერძების სახლში შეკვეთისთვის დააწექით აქ.</b>{" "}
             </a>
           </Typography>
         </div>
@@ -149,20 +149,20 @@ export default function AboutUs(props) {
             traditional wines in the future.
             <br /> <br />
             You can find more dishes and an updated{" "}
-            <Link
-              to="#menu"
+            <a
+              href="/#menu"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
               {" "}
-              wine list{" "}
-            </Link>{" "}
+              <b>wine list</b>{" "}
+            </a>{" "}
             in our new{" "}
-            <Link
-              to="#menu"
+            <a
+              href="/#menu"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              menu
-            </Link>
+              <b>menu</b>
+            </a>
             .
             <br /> <br />
             <a
@@ -171,7 +171,7 @@ export default function AboutUs(props) {
               href="https://www.lieferando.de/suliko"
               style={{ textDecoration: "none", color: "rgba(133,26,29)" }}
             >
-              Click here to order home delivery.
+              <b>Click here to order home delivery.</b>
             </a>
           </Typography>
         </div>

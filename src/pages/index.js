@@ -22,7 +22,7 @@ import CookiesBar from "../components/cookiesBar"
 import ReserveWindow from "../components/ReserveWindow"
 import ReserveButton from "../components/ReserveButton"
 import HomeText from "../components/HomeText"
-import AboutUs from "../components/AboutUs"
+import Welcome from "../components/Welcome"
 import Press from "../components/Press"
 import Contact from "../components/Contact"
 import Menu from "../components/Menu"
@@ -47,6 +47,8 @@ import s16 from "../images/s16.jpg"
 
 import bgV1 from "../images/bgV1.jpg"
 import bgV2 from "../images/bgV2.jpg"
+// import ReserveButtonQuandoo from "../components/ReserveButtonQuandoo"
+// import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
 
 const window = require("global/window")
 
@@ -55,6 +57,7 @@ SwiperCore.use([Autoplay, Navigation, EffectFade, Pagination])
 export default function (props) {
   const { actLanguage } = useContext(LanguageContext)
   const [open, setOpen] = useState(false)
+  const [openQuandoo, setOpenQuandoo] = useState(false)
 
   const [showAfterLoading, setShowAfterLoading] = useState(false)
 
@@ -72,6 +75,16 @@ export default function (props) {
   }
   const handleClose = () => {
     setOpen(false)
+    const scrollY = document.body.style.top
+    document.body.style.position = ""
+  }
+
+  const handleOpenQuandoo = () => {
+    setOpenQuandoo(true)
+    document.body.style.position = "fixed"
+  }
+  const handleCloseQuandoo = () => {
+    setOpenQuandoo(false)
     const scrollY = document.body.style.top
     document.body.style.position = ""
   }
@@ -165,6 +178,20 @@ export default function (props) {
         </Container>
         {showAfterLoading && (
           <Container id="center">
+            {/* <Quandoo /> */}
+            <div id="quandoo-booking-widget"></div>
+            <Helmet>
+              <script
+                src="https://booking-widget.quandoo.com/index.js"
+                data-merchant-id="55293"
+                data-theme="brand"
+              ></script>
+            </Helmet>
+            {/* <ReserveButtonQuandoo onOpen={handleOpenQuandoo} />
+            <ReserveWindowQuandoo
+              onClose={handleCloseQuandoo}
+              open={openQuandoo}
+            /> */}
             <ReserveButton onOpen={handleOpen} />
             <ReserveWindow onClose={handleClose} open={open} />
             <br /> <br />
@@ -240,8 +267,8 @@ export default function (props) {
               </Swiper>
             </Container>
             <br /> <br />
-            <Container id="welcome" className="aboutUsWrapper">
-              <AboutUs />
+            <Container id="welcome" className="welcomeWrapper">
+              <Welcome />
             </Container>
             <br /> <br />
             <Container id="press">
