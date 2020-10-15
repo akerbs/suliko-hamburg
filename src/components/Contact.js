@@ -117,7 +117,7 @@ export default function Contact(props) {
           <br />
           ორშაბათი-ხუთშაბათი 12:00 - 15:00, 17:00 - 22:00 <br />
           პარ 12:00 - 15:00, 17:00 - 24:00 <br />
-          შაბათი 17:00 - 24:00 <br />
+          შაბათი 15:00 - 24:00 <br />
           მზე 15:00 - 22:00 <br />
           <br />
         </Typography>
@@ -150,7 +150,7 @@ export default function Contact(props) {
           <b>Opening hours </b> <br />
           Mon-Thu 12:00 pm - 3:00 pm, 5:00 pm - 10:00 pm <br />
           Fri 12:00 - 15:00, 17:00 - 24:00 <br />
-          Sa 17:00 - 24:00 <br />
+          Sa 15:00 - 24:00 <br />
           Sun 15:00 - 22:00 <br />
           <br />
         </Typography>
