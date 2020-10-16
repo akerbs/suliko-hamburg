@@ -29,7 +29,7 @@ import { yupResolver } from "@hookform/resolvers"
 import IconButton from "@material-ui/core/IconButton"
 import HighlightOffIcon from "@material-ui/icons/HighlightOff"
 import { LanguageContext } from "../components/layout"
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
+// import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
 import DateFnsUtils from "@date-io/date-fns"
 
 const useStyles = makeStyles(theme => ({
@@ -193,7 +193,7 @@ const schemaEng = yup.object().shape({
 })
 
 export default function WindowReserve(props) {
-  const { executeRecaptcha } = useGoogleReCaptcha()
+  // const { executeRecaptcha } = useGoogleReCaptcha()
   const [token, setToken] = useState("")
   const { actLanguage } = useContext(LanguageContext)
   const [loading, setLoading] = useState(false)
@@ -243,12 +243,12 @@ export default function WindowReserve(props) {
       : null
 
   async function onSubmit(data) {
-    if (!executeRecaptcha) {
-      return
-    }
+    // if (!executeRecaptcha) {
+    //   return
+    // }
     try {
-      const result = await executeRecaptcha("suliko_reserve_table")
-      setToken(result) //--> grab the generated token by the reCAPTCHA
+      // const result = await executeRecaptcha("suliko_reserve_table")
+      // setToken(result) //--> grab the generated token by the reCAPTCHA
       handleLoadingOn()
 
       let response = await fetch(
