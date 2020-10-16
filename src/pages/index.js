@@ -178,20 +178,12 @@ export default function (props) {
         </Container>
         {showAfterLoading && (
           <Container id="center">
-            {/* <Quandoo /> */}
-            <div id="quandoo-booking-widget"></div>
-            <Helmet>
-              <script
-                src="https://booking-widget.quandoo.com/index.js"
-                data-merchant-id="55293"
-                data-theme="brand"
-              ></script>
-            </Helmet>
+
             <ReserveButtonQuandoo onOpen={handleOpenQuandoo} />
-            {/* <ReserveWindowQuandoo
+            <ReserveWindowQuandoo
               onClose={handleCloseQuandoo}
               open={openQuandoo}
-            /> */}
+            />
             <ReserveButton onOpen={handleOpen} />
             <ReserveWindow onClose={handleClose} open={open} />
             <br /> <br />
