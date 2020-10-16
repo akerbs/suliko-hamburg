@@ -290,7 +290,9 @@ export default function WindowReserve(props) {
    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         </Helmet>
         <form
-                  id='demo-form' action="?" method="POST"
+                  id='demo-form' 
+                  action="?"
+                   method="POST"
           // name="myForm"
           // method="post"
           // action="http://localhost:3000/reservation"
@@ -534,7 +536,9 @@ export default function WindowReserve(props) {
             <HighlightOffIcon />
           </IconButton>
           <Button
-           className="g-recaptcha" dataSitekey="your_site_key" dataCallback='onSubmit'
+           className="g-recaptcha" 
+           dataSitekey="6LfLQ9MZAAAAAPy8tgiC1K2zDaNW5owLyg4-MjuQ"
+            dataCallback='onSubmit'
             id="submit"
             name="submit"
             type="submit"
