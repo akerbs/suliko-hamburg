@@ -32,9 +32,6 @@ import { LanguageContext } from "../components/layout"
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
 import DateFnsUtils from "@date-io/date-fns"
 
-
-
-
 const useStyles = makeStyles(theme => ({
   modalWrapper: {
     display: "flex",
