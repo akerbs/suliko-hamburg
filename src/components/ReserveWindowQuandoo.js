@@ -65,7 +65,7 @@ export default function WindowReserveQuandoo(props) {
       open={props.open}
     >
       <div className={classes.paper}>
-        <div id="”quandoo-booking-widget”"></div>
+        <div id="quandoo-booking-widget"></div>
         <Helmet>
           <script
             type="text/javascript"

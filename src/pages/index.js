@@ -47,8 +47,8 @@ import s16 from "../images/s16.jpg"
 
 import bgV1 from "../images/bgV1.jpg"
 import bgV2 from "../images/bgV2.jpg"
-// import ReserveButtonQuandoo from "../components/ReserveButtonQuandoo"
-// import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
+import ReserveButtonQuandoo from "../components/ReserveButtonQuandoo"
+import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
 
 const window = require("global/window")
 
@@ -187,11 +187,11 @@ export default function (props) {
                 data-theme="brand"
               ></script>
             </Helmet>
-            {/* <ReserveButtonQuandoo onOpen={handleOpenQuandoo} />
+            <ReserveButtonQuandoo onOpen={handleOpenQuandoo} />
             <ReserveWindowQuandoo
               onClose={handleCloseQuandoo}
               open={openQuandoo}
-            /> */}
+            />
             <ReserveButton onOpen={handleOpen} />
             <ReserveWindow onClose={handleClose} open={open} />
             <br /> <br />
