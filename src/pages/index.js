@@ -24,22 +24,22 @@ import { LanguageContext } from "../components/layout"
 import inView from "in-view"
 import Img from "gatsby-image"
 import loadable from '@loadable/component'
-import s1 from "../images/s1.jpg"
-import s2 from "../images/s2.jpg"
-import s3 from "../images/s3.jpg"
-import s4 from "../images/s4.jpg"
-import s5 from "../images/s5.jpg"
-import s6 from "../images/s6.jpg"
-import s7 from "../images/s7.jpg"
-import s8 from "../images/s8.jpg"
-import s9 from "../images/s9.jpg"
-import s10 from "../images/s10.jpg"
-import s11 from "../images/s11.jpg"
-import s12 from "../images/s12.jpg"
-import s13 from "../images/s13.jpg"
-import s14 from "../images/s14.jpg"
-import s15 from "../images/s15.jpg"
-import s16 from "../images/s16.jpg"
+// import s1 from "../images/s1.jpg"
+// import s2 from "../images/s2.jpg"
+// import s3 from "../images/s3.jpg"
+// import s4 from "../images/s4.jpg"
+// import s5 from "../images/s5.jpg"
+// import s6 from "../images/s6.jpg"
+// import s7 from "../images/s7.jpg"
+// import s8 from "../images/s8.jpg"
+// import s9 from "../images/s9.jpg"
+// import s10 from "../images/s10.jpg"
+// import s11 from "../images/s11.jpg"
+// import s12 from "../images/s12.jpg"
+// import s13 from "../images/s13.jpg"
+// import s14 from "../images/s14.jpg"
+// import s15 from "../images/s15.jpg"
+// import s16 from "../images/s16.jpg"
 import bgV1 from "../images/bgV1.jpg"
 import bgV2 from "../images/bgV2.jpg"
 // import HomeText from "../components/HomeText"
@@ -48,6 +48,23 @@ import bgV2 from "../images/bgV2.jpg"
 // import Contact from "../components/Contact"
 // import Menu from "../components/Menu"
 // import CookiesBar from "../components/cookiesBar"
+const s1 = loadable(() => import('../images/s1.jpg'))
+const s2 = loadable(() => import('../images/s2.jpg'))
+const s3 = loadable(() => import('../images/s3.jpg'))
+const s4 = loadable(() => import('../images/s4.jpg'))
+const s5 = loadable(() => import('../images/s5.jpg'))
+const s6 = loadable(() => import('../images/s6.jpg'))
+const s7 = loadable(() => import('../images/s7.jpg'))
+const s8 = loadable(() => import('../images/s8.jpg'))
+const s9 = loadable(() => import('../images/s9.jpg'))
+const s10 = loadable(() => import('../images/s10.jpg'))
+const s11 = loadable(() => import('../images/s11.jpg'))
+const s12 = loadable(() => import('../images/s12.jpg'))
+const s13 = loadable(() => import('../images/s13.jpg'))
+const s14 = loadable(() => import('../images/s14.jpg'))
+const s15 = loadable(() => import('../images/s15.jpg'))
+const s16 = loadable(() => import('../images/s16.jpg'))
+
 
 const HomeText = loadable(() => import('../components/HomeText'))
 const Welcome = loadable(() => import('../components/Welcome'))
