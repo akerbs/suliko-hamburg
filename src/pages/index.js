@@ -44,9 +44,10 @@ import bgV2 from "../images/bgV2.jpg"
 // import Press from "../components/Press"
 // import Contact from "../components/Contact"
 // import Menu from "../components/Menu"
-// import CookiesBar from "../components/cookiesBar"
+
 // import ReserveWindow from "../components/ReserveWindow"
 // import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
+import CookiesBar from "../components/cookiesBar"
 const ReserveWindow = loadable(() => import('../components/ReserveWindow'))
 const ReserveWindowQuandoo = loadable(() => import('../components/ReserveWindowQuandoo'))
 const HomeText = loadable(() => import('../components/HomeText'))
@@ -54,7 +55,9 @@ const Welcome = loadable(() => import('../components/Welcome'))
 const Press = loadable(() => import('../components/Press'))
 const Contact = loadable(() => import('../components/Contact'))
 const Menu = loadable(() => import('../components/Menu'))
-const CookiesBar = loadable(() => import('../components/cookiesBar'))
+// const CookiesBar = loadable(() => import('../components/cookiesBar'))
+
+
 
 const window = require("global/window")
 
