@@ -57,14 +57,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-anchor-links`,
-     {
-      resolve: `gatsby-plugin-recaptcha`,
-      options: {
-         async: true,
-         defer: true,
-        //  args: `?onload=onloadCallback&render=explicit`,
-      },
-   },
+   
     // In your gatsby-config.js
 
     // {
