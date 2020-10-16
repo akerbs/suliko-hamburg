@@ -16,10 +16,8 @@ import menu from "../images/menu.png"
 import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import ReserveWindow from "../components/ReserveWindow"
 import ReserveButton from "../components/ReserveButton"
 import ReserveButtonQuandoo from "../components/ReserveButtonQuandoo"
-import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
 import { LanguageContext } from "../components/layout"
 import inView from "in-view"
 import Img from "gatsby-image"
@@ -48,6 +46,11 @@ import bgV2 from "../images/bgV2.jpg"
 // import Contact from "../components/Contact"
 // import Menu from "../components/Menu"
 // import CookiesBar from "../components/cookiesBar"
+// import ReserveWindow from "../components/ReserveWindow"
+// import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
+
+const ReserveWindow = loadable(() => import('../components/ReserveWindow'))
+const ReserveWindowQuandoo = loadable(() => import('../components/ReserveWindowQuandoo'))
 
 const HomeText = loadable(() => import('../components/HomeText'))
 const Welcome = loadable(() => import('../components/Welcome'))
