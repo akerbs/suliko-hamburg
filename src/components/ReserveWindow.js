@@ -29,13 +29,9 @@ import { yupResolver } from "@hookform/resolvers"
 import IconButton from "@material-ui/core/IconButton"
 import HighlightOffIcon from "@material-ui/icons/HighlightOff"
 import { LanguageContext } from "../components/layout"
-import loadable from '@loadable/component'
-
-
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
-// const {useGoogleReCaptcha} = loadable(() => import('react-google-recaptcha-v3'))
-// import DateFnsUtils from "@date-io/date-fns"
-const DateFnsUtils = loadable(() => import('@date-io/date-fns'))
+import DateFnsUtils from "@date-io/date-fns"
+
 
 
 

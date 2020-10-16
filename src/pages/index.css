@@ -60,3 +60,11 @@
     padding: 100px 15px 10px 15px;
   }
 }
+
+.swiper-pagination-bullet {
+  background-color: black;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #851a1d;
+}

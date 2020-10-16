@@ -11,7 +11,6 @@ import SwiperCore, {
 } from "swiper"
 import "swiper/swiper-bundle.css"
 import "./index.css"
-import "./swiper.css"
 import menu from "../images/menu.png"
 import { Helmet } from "react-helmet"
 import Header from "../components/header"
