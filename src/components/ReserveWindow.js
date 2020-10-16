@@ -29,10 +29,8 @@ import { yupResolver } from "@hookform/resolvers"
 import IconButton from "@material-ui/core/IconButton"
 import HighlightOffIcon from "@material-ui/icons/HighlightOff"
 import { LanguageContext } from "../components/layout"
-// import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
 import DateFnsUtils from "@date-io/date-fns"
-import { Helmet } from "react-helmet"
-
 
 const useStyles = makeStyles(theme => ({
   modalWrapper: {
@@ -195,7 +193,7 @@ const schemaEng = yup.object().shape({
 })
 
 export default function WindowReserve(props) {
-  // const { executeRecaptcha } = useGoogleReCaptcha()
+  const { executeRecaptcha } = useGoogleReCaptcha()
   const [token, setToken] = useState("")
   const { actLanguage } = useContext(LanguageContext)
   const [loading, setLoading] = useState(false)
@@ -244,13 +242,13 @@ export default function WindowReserve(props) {
       ? "მადლობა !!! ცოტა ხანში დაგიკავშირდებით :-)"
       : null
 
-  async function onSubmit(data, token) {
-    // if (!executeRecaptcha) {
-    //   return
-    // }
+  async function onSubmit(data) {
+    if (!executeRecaptcha) {
+      return
+    }
     try {
-      // const result = await executeRecaptcha("suliko_reserve_table")
-      // setToken(result) //--> grab the generated token by the reCAPTCHA
+      const result = await executeRecaptcha("suliko_reserve_table")
+      setToken(result) //--> grab the generated token by the reCAPTCHA
       handleLoadingOn()
 
       let response = await fetch(
@@ -286,13 +284,7 @@ export default function WindowReserve(props) {
       open={props.open}
     >
       <div className={classes.paper}>
-         <Helmet>
-   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        </Helmet>
         <form
-                  id='demo-form' 
-                  action="?"
-                   method="POST"
           // name="myForm"
           // method="post"
           // action="http://localhost:3000/reservation"
@@ -300,7 +292,6 @@ export default function WindowReserve(props) {
           // onSubmit={handleSubmit(data => alert(JSON.stringify(data)))}
           onSubmit={handleSubmit(onSubmit)}
           noValidate
-
         >
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <Timeline className={classes.timeline}>
@@ -536,9 +527,6 @@ export default function WindowReserve(props) {
             <HighlightOffIcon />
           </IconButton>
           <Button
-           className="g-recaptcha" 
-           dataSitekey="6LfLQ9MZAAAAAPy8tgiC1K2zDaNW5owLyg4-MjuQ"
-            dataCallback='onSubmit'
             id="submit"
             name="submit"
             type="submit"
