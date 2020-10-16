@@ -32,9 +32,6 @@ function Layout({ children }) {
     }
   }, [])
 
-  // useEffect(() => {
-  //   console.log("language changed", actLanguage)
-  // }, [actLanguage])
 
   function handleLanguageChange(event) {
     setActLanguage(event.target.value)
