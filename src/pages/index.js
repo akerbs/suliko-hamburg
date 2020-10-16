@@ -42,13 +42,18 @@ import s15 from "../images/s15.jpg"
 import s16 from "../images/s16.jpg"
 import bgV1 from "../images/bgV1.jpg"
 import bgV2 from "../images/bgV2.jpg"
-import HomeText from "../components/HomeText"
-import Welcome from "../components/Welcome"
-import Press from "../components/Press"
-import Contact from "../components/Contact"
-import Menu from "../components/Menu"
+// import HomeText from "../components/HomeText"
+// import Welcome from "../components/Welcome"
+// import Press from "../components/Press"
+// import Contact from "../components/Contact"
+// import Menu from "../components/Menu"
 // import CookiesBar from "../components/cookiesBar"
 
+const HomeText = loadable(() => import('../components/HomeText'))
+const Welcome = loadable(() => import('../components/Welcome'))
+const Press = loadable(() => import('../components/Press'))
+const Contact = loadable(() => import('../components/Contact'))
+const Menu = loadable(() => import('../components/Menu'))
 const CookiesBar = loadable(() => import('../components/cookiesBar'))
 
 
