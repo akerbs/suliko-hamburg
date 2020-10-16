@@ -21,22 +21,22 @@ import { LanguageContext } from "../components/layout"
 import inView from "in-view"
 import Img from "gatsby-image"
 import loadable from '@loadable/component'
-import s1 from "../images/s1.jpg"
-import s2 from "../images/s2.jpg"
-import s3 from "../images/s3.jpg"
-import s4 from "../images/s4.jpg"
-import s5 from "../images/s5.jpg"
-import s6 from "../images/s6.jpg"
-import s7 from "../images/s7.jpg"
-import s8 from "../images/s8.jpg"
-import s9 from "../images/s9.jpg"
-import s10 from "../images/s10.jpg"
-import s11 from "../images/s11.jpg"
-import s12 from "../images/s12.jpg"
-import s13 from "../images/s13.jpg"
-import s14 from "../images/s14.jpg"
-import s15 from "../images/s15.jpg"
-import s16 from "../images/s16.jpg"
+// import s1 from "../images/s1.jpg"
+// import s2 from "../images/s2.jpg"
+// import s3 from "../images/s3.jpg"
+// import s4 from "../images/s4.jpg"
+// import s5 from "../images/s5.jpg"
+// import s6 from "../images/s6.jpg"
+// import s7 from "../images/s7.jpg"
+// import s8 from "../images/s8.jpg"
+// import s9 from "../images/s9.jpg"
+// import s10 from "../images/s10.jpg"
+// import s11 from "../images/s11.jpg"
+// import s12 from "../images/s12.jpg"
+// import s13 from "../images/s13.jpg"
+// import s14 from "../images/s14.jpg"
+// import s15 from "../images/s15.jpg"
+// import s16 from "../images/s16.jpg"
 import bgV1 from "../images/bgV1.jpg"
 import bgV2 from "../images/bgV2.jpg"
 // import HomeText from "../components/HomeText"
@@ -225,53 +225,118 @@ useEffect(() => {
                 className="slider"
               >
                 <SwiperSlide>
-                  <img src={s1} alt="Suliko img1" />
+                    <Img
+                  fluid={props.data.s1.childImageSharp.fluid}
+                  alt="img1"
+                />
+                  {/* <img src={s1} alt="Suliko img1" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s2} alt="Suliko img2" />
+                  <Img
+                  fluid={props.data.s2.childImageSharp.fluid}
+                  alt="img2"
+                />
+                  {/* <img src={s2} alt="Suliko img2" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s3} alt="Suliko img3" />
+                  <Img
+                  fluid={props.data.s3.childImageSharp.fluid}
+                  alt="img3"
+                />
+                  {/* <img src={s3} alt="Suliko img3" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s4} alt="Suliko img4" />
+                  <Img
+                  fluid={props.data.s4.childImageSharp.fluid}
+                  alt="img4"
+                />
+                  {/* <img src={s4} alt="Suliko img4" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s5} alt="Suliko img5" />
+                  <Img
+                  fluid={props.data.s5.childImageSharp.fluid}
+                  alt="img5"
+                />
+                  {/* <img src={s5} alt="Suliko img5" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s6} alt="Suliko img6" />
+                  <Img
+                  fluid={props.data.s6.childImageSharp.fluid}
+                  alt="img6"
+                />
+                  {/* <img src={s6} alt="Suliko img6" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s7} alt="Suliko img7" />
+                  <Img
+                  fluid={props.data.s7.childImageSharp.fluid}
+                  alt="img7"
+                />
+                  {/* <img src={s7} alt="Suliko img7" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s8} alt="Suliko img8" />
+                  <Img
+                  fluid={props.data.s8.childImageSharp.fluid}
+                  alt="img8"
+                />
+                  {/* <img src={s8} alt="Suliko img8" /> */}
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <img src={s9} alt="Suliko img9" />
+
+                  <Img
+                  fluid={props.data.s9.childImageSharp.fluid}
+                  alt="img9"
+                />
+                  {/* <img src={s9} alt="Suliko img9" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s10} alt="Suliko img10" />
+                  <Img
+                  fluid={props.data.s10.childImageSharp.fluid}
+                  alt="img10"
+                />
+                  {/* <img src={s10} alt="Suliko img10" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s11} alt="Suliko img11" />
+                  <Img
+                  fluid={props.data.s11.childImageSharp.fluid}
+                  alt="img11"
+                />
+                  {/* <img src={s11} alt="Suliko img11" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s12} alt="Suliko img12" />
+                  <Img
+                  fluid={props.data.s12.childImageSharp.fluid}
+                  alt="img12"
+                />
+                  {/* <img src={s12} alt="Suliko img12" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s13} alt="Suliko img13" />
+                  <Img
+                  fluid={props.data.s13.childImageSharp.fluid}
+                  alt="img13"
+                />
+                  {/* <img src={s13} alt="Suliko img13" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s14} alt="Suliko img14" />
+                  <Img
+                  fluid={props.data.s14.childImageSharp.fluid}
+                  alt="img14"
+                />
+                  {/* <img src={s14} alt="Suliko img14" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s15} alt="Suliko img15" />
+                  <Img
+                  fluid={props.data.s15.childImageSharp.fluid}
+                  alt="img15"
+                />
+                  {/* <img src={s15} alt="Suliko img15" /> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={s16} alt="Suliko img16" />
+                  <Img
+                  fluid={props.data.s16.childImageSharp.fluid}
+                  alt="img16"
+                />
+                  {/* <img src={s16} alt="Suliko img16" /> */}
                 </SwiperSlide>
               </Swiper>
             </Container>
@@ -341,6 +406,118 @@ export const query = graphql`
     bgH2: file(relativePath: { eq: "bgH2.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s1: file(relativePath: { eq: "s1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s2: file(relativePath: { eq: "s2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s3: file(relativePath: { eq: "s3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s4: file(relativePath: { eq: "s4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s5: file(relativePath: { eq: "s5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s6: file(relativePath: { eq: "s6.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s7: file(relativePath: { eq: "s7.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s8: file(relativePath: { eq: "s8.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s9: file(relativePath: { eq: "s9.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s10: file(relativePath: { eq: "s10.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s11: file(relativePath: { eq: "s11.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s12: file(relativePath: { eq: "s12.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s13: file(relativePath: { eq: "s13.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s14: file(relativePath: { eq: "s14.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s15: file(relativePath: { eq: "s15.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+      s16: file(relativePath: { eq: "s16.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
