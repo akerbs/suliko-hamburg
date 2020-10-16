@@ -9,6 +9,7 @@ const useStyles = makeStyles(theme => ({
     left: 20,
     zIndex: 10,
     backgroundColor: "tomato",
+    visibility: 'hidden',
     // backgroundColor: theme.palette.primary.main,
 
     color: theme.palette.primary.contrastText,
@@ -39,7 +40,7 @@ export default function ReserveButton(props) {
           : actLanguage === "ENG"
           ? "Reserve a table"
           : actLanguage === "GEO"
-          ? "შეუკვეთემაგიდა"
+          ? "შეუკვეთ მაგიდა"
           : null}
       </Button>
     </>

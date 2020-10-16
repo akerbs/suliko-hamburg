@@ -96,7 +96,7 @@ export default function Menu(props) {
                 : actLanguage === "ENG"
                 ? "Menu and bar"
                 : actLanguage === "GEO"
-                ? "კერძებისადასასმელებისმენიუ"
+                ? "კერძებისა და ასმელების ენიუ"
                 : null}
             </Button>
           </Slide>
@@ -119,7 +119,7 @@ export default function Menu(props) {
                 : actLanguage === "ENG"
                 ? "Wine list"
                 : actLanguage === "GEO"
-                ? "ღვინისმენიუ"
+                ? "ღვინი მენიუ"
                 : null}
             </Button>
           </Slide>
@@ -143,7 +143,7 @@ export default function Menu(props) {
                 : actLanguage === "ENG"
                 ? "Lunch menu"
                 : actLanguage === "GEO"
-                ? "ლანჩისმენიუ"
+                ? "ლანჩის ენიუ"
                 : null}
             </Button>
           </Slide>
@@ -170,7 +170,7 @@ export default function Menu(props) {
                   : actLanguage === "ENG"
                   ? "Banquet menu"
                   : actLanguage === "GEO"
-                  ? "საბანკეტომენიუ"
+                  ? "საბანკეტო ენიუ"
                   : null}
               </Button>
             </Slide>
