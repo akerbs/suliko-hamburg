@@ -68,7 +68,7 @@ export default function (props) {
 useEffect(() => {
   const timer = setTimeout(() => {
  startShowAfterLoading()
-  }, 1000);
+  }, 500);
   return () => clearTimeout(timer);
 }, []);
 
@@ -96,6 +96,8 @@ useEffect(() => {
     const scrollY = document.body.style.top
     document.body.style.position = ""
   }
+
+  
 
   return (
     <>
