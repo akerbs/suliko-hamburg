@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect, Suspense } from "react"
+import React, { useState, useContext, useEffect } from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Container from "@material-ui/core/Container"
@@ -10,21 +10,20 @@ import SwiperCore, {
   Pagination,
 } from "swiper"
 import "swiper/swiper-bundle.css"
-import Img from "gatsby-image"
 import "./index.css"
 import "./swiper.css"
-
 import menu from "../images/menu.png"
 import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
-
 import ReserveWindow from "../components/ReserveWindow"
 import ReserveButton from "../components/ReserveButton"
-
-
+import ReserveButtonQuandoo from "../components/ReserveButtonQuandoo"
+import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
 import { LanguageContext } from "../components/layout"
 import inView from "in-view"
+import Img from "gatsby-image"
+import loadable from '@loadable/component'
 import s1 from "../images/s1.jpg"
 import s2 from "../images/s2.jpg"
 import s3 from "../images/s3.jpg"
@@ -41,23 +40,18 @@ import s13 from "../images/s13.jpg"
 import s14 from "../images/s14.jpg"
 import s15 from "../images/s15.jpg"
 import s16 from "../images/s16.jpg"
-
 import bgV1 from "../images/bgV1.jpg"
 import bgV2 from "../images/bgV2.jpg"
-import ReserveButtonQuandoo from "../components/ReserveButtonQuandoo"
-import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
-// import Menu from "../components/Menu"
-const Menu = React.lazy(() => import('../components/Menu'));
+import HomeText from "../components/HomeText"
+import Welcome from "../components/Welcome"
+import Press from "../components/Press"
+import Contact from "../components/Contact"
+import Menu from "../components/Menu"
 // import CookiesBar from "../components/cookiesBar"
-const CookiesBar = React.lazy(() => import('../components/cookiesBar'));
-// import HomeText from "../components/HomeText"
-const HomeText = React.lazy(() => import('../components/HomeText'));
-// import Welcome from "../components/Welcome"
-const Welcome = React.lazy(() => import('../components/Welcome'));
-// import Press from "../components/Press"
-const Press = React.lazy(() => import('../components/Press'));
-// import Contact from "../components/Contact"
-const Contact = React.lazy(() => import('../components/Contact'));
+
+const CookiesBar = loadable(() => import('../components/cookiesBar'))
+
+
 
 const window = require("global/window")
 
@@ -207,10 +201,7 @@ useEffect(() => {
             <ReserveWindow onClose={handleClose} open={open} />
             <br /> <br />
             <Container id="home-text">
-             <Suspense fallback={<div>loading...</div>}>
-  <HomeText />
-      </Suspense>
-            
+              <HomeText />
             </Container>
             <br /> <br />
             <Container id="slider">
@@ -282,17 +273,12 @@ useEffect(() => {
             </Container>
             <br /> <br />
             <Container id="welcome" className="welcomeWrapper">
-               <Suspense fallback={<div>loading...</div>}>
-          <Welcome />
-      </Suspense>
-    
+              <Welcome />
             </Container>
             <br /> <br />
             <Container id="press">
-      <Suspense fallback={<div>loading...</div>}>
-                     <Press />
-      </Suspense>
-
+              {" "}
+              <Press />{" "}
             </Container>
             <br /> <br />
             <img
@@ -308,10 +294,7 @@ useEffect(() => {
             <br /> <br />
             <br />
             <Container className="menuWrapper">
-             <Suspense fallback={<div>loading...</div>}>
-    <Menu />
-      </Suspense>
-          
+              <Menu />
             </Container>
             <br /> <br />
             <img
@@ -322,10 +305,7 @@ useEffect(() => {
             <br /> <br />
             <br />
             <Container id="contact" className="contactWrapper">
-             <Suspense fallback={<div>loding...</div>}>
-        <Contact />
-      </Suspense>
-      
+              <Contact />
             </Container>
           </Container>
         )}
@@ -339,10 +319,7 @@ useEffect(() => {
           </Container>
         )}
         {showAfterLoading && <Footer />}
-   <Suspense fallback={<div>loading...</div>}>
-         <CookiesBar />
-      </Suspense>
-    
+        <CookiesBar />
       </Container>
     </>
   )
