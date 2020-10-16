@@ -66,8 +66,13 @@ export default function (props) {
   const [openQuandoo, setOpenQuandoo] = useState(false)
 
   const [showAfterLoading, setShowAfterLoading] = useState(false)
+  const [showAfterLoading2, setShowAfterLoading2] = useState(false)
+
 
   function startShowAfterLoading() {
+    setShowAfterLoading(true)
+  }
+    function startShowAfterLoading2() {
     setShowAfterLoading(true)
   }
 
@@ -79,7 +84,7 @@ useEffect(() => {
 }, []);
 
   useEffect(() => {
-    // inView("#slider-first").once("enter", startShowAfterLoading)
+    inView("#slider").once("enter", startShowAfterLoading2)
   // inView.threshold(0.5)
   })
 
@@ -208,6 +213,7 @@ useEffect(() => {
             </Container>
             <br /> <br />
             <Container id="slider">
+            {showAfterLoading2 && 
               <Swiper
                 pagination={{ clickable: true }}
                 style={{ zIndex: 0 }}
@@ -273,6 +279,7 @@ useEffect(() => {
                   <img src={s16} alt="Suliko img16" />
                 </SwiperSlide>
               </Swiper>
+                }
             </Container>
             <br /> <br />
             <Container id="welcome" className="welcomeWrapper">
