@@ -40,7 +40,7 @@ export default function ReserveButton(props) {
           : actLanguage === "ENG"
           ? "Reserve a table"
           : actLanguage === "GEO"
-          ? "შეუკვეთ მაგიდა"
+          ? "შეუკვეთე მაგიდა"
           : null}
       </Button>
     </>
