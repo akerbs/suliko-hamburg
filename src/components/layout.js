@@ -5,8 +5,8 @@ import theme from "./theme"
 // import CookiesBar from "./cookiesBar"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import loadable from '@loadable/component'
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3"
-// const {GoogleReCaptchaProvider} = loadable(() => import('react-google-recaptcha-v3'))
+// import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3"
+const GoogleReCaptchaProvider = loadable(() => import('react-google-recaptcha-v3'))
 
 
 const window = require("global/window")
