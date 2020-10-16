@@ -31,6 +31,7 @@ import HighlightOffIcon from "@material-ui/icons/HighlightOff"
 import { LanguageContext } from "../components/layout"
 import loadable from '@loadable/component'
 
+
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
 // const {useGoogleReCaptcha} = loadable(() => import('react-google-recaptcha-v3'))
 // import DateFnsUtils from "@date-io/date-fns"
@@ -253,7 +254,7 @@ export default function WindowReserve(props) {
       return
     }
     try {
-      const result = executeRecaptcha("suliko_reserve_table")
+      const result = await executeRecaptcha("suliko_reserve_table")
       setToken(result) //--> grab the generated token by the reCAPTCHA
       handleLoadingOn()
 

@@ -35,6 +35,7 @@ module.exports = {
           cookieName: "gatsby-gdpr-google-analytics", // default
           anonymize: true, // default
         },
+        
 
         // googleTagManager: {
         //   trackingId: "YOUR_GOOGLE_TAG_MANAGER_TRACKING_ID", // leave empty if you want to disable the tracker
@@ -56,6 +57,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-anchor-links`,
+     {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+         async: true,
+         defer: true,
+        //  args: `?onload=onloadCallback&render=explicit`,
+      },
+   },
     // In your gatsby-config.js
 
     // {

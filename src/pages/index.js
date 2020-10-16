@@ -48,18 +48,14 @@ import bgV2 from "../images/bgV2.jpg"
 // import CookiesBar from "../components/cookiesBar"
 // import ReserveWindow from "../components/ReserveWindow"
 // import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
-
 const ReserveWindow = loadable(() => import('../components/ReserveWindow'))
 const ReserveWindowQuandoo = loadable(() => import('../components/ReserveWindowQuandoo'))
-
 const HomeText = loadable(() => import('../components/HomeText'))
 const Welcome = loadable(() => import('../components/Welcome'))
 const Press = loadable(() => import('../components/Press'))
 const Contact = loadable(() => import('../components/Contact'))
 const Menu = loadable(() => import('../components/Menu'))
 const CookiesBar = loadable(() => import('../components/cookiesBar'))
-const GoogleMap = loadable(() => import('../components/googleMap'))
-
 
 const window = require("global/window")
 
@@ -319,12 +315,11 @@ useEffect(() => {
         )}
         {showAfterLoading && (
           <Container id="map" className="mapWrapper" maxWidth="lg">
-          <GoogleMap/>
-            {/* <iframe
+            <iframe
               className="map"
               title="map"
               src="https://www.google.com/maps/d/u/0/embed?mid=1UQMf_-g-DjVCWRAkAVCDWjVNGXkvW4xc"
-            ></iframe> */}
+            ></iframe>
           </Container>
         )}
         {showAfterLoading && <Footer />}

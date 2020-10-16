@@ -8,6 +8,7 @@ import loadable from '@loadable/component'
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3"
 // const {GoogleReCaptchaProvider} = loadable(() => import('react-google-recaptcha-v3'))
 
+
 const window = require("global/window")
 
 export const LanguageContext = createContext()
@@ -32,6 +33,10 @@ function Layout({ children }) {
       }
     }
   }, [])
+
+  // useEffect(() => {
+  //   console.log("language changed", actLanguage)
+  // }, [actLanguage])
 
   function handleLanguageChange(event) {
     setActLanguage(event.target.value)
