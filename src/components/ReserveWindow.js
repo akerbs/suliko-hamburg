@@ -7,7 +7,6 @@ import {
   DatePicker,
 } from "@material-ui/pickers"
 import "date-fns"
-import DateFnsUtils from "@date-io/date-fns"
 import Modal from "@material-ui/core/Modal"
 import Timeline from "@material-ui/lab/Timeline"
 import TimelineItem from "@material-ui/lab/TimelineItem"
@@ -30,7 +29,14 @@ import { yupResolver } from "@hookform/resolvers"
 import IconButton from "@material-ui/core/IconButton"
 import HighlightOffIcon from "@material-ui/icons/HighlightOff"
 import { LanguageContext } from "../components/layout"
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
+import loadable from '@loadable/component'
+// import DateFnsUtils from "@date-io/date-fns"
+const DateFnsUtils = loadable(() => import('@date-io/date-fns'))
+// import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
+const {useGoogleReCaptcha} = loadable(() => import('react-google-recaptcha-v3'))
+
+
+
 
 const useStyles = makeStyles(theme => ({
   modalWrapper: {
