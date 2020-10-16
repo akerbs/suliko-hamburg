@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("xs")]: {
       overflowY: "scroll",
     },
-    height: 805,
+    maxHeight: "100vh",
     width: 300,
     backgroundColor: "rgba(249,234,207)",
     border: "2px solid rgba(133,26,29)",
@@ -73,7 +73,7 @@ export default function WindowReserveQuandoo(props) {
             async
             data-merchant-id="55293"
             data-theme="brand"
-            defer
+            // defer
           ></script>
         </Helmet>
       </div>
