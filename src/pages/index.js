@@ -188,10 +188,10 @@ export default function (props) {
               ></script>
             </Helmet>
             <ReserveButtonQuandoo onOpen={handleOpenQuandoo} />
-            <ReserveWindowQuandoo
+            {/* <ReserveWindowQuandoo
               onClose={handleCloseQuandoo}
               open={openQuandoo}
-            />
+            /> */}
             <ReserveButton onOpen={handleOpen} />
             <ReserveWindow onClose={handleClose} open={open} />
             <br /> <br />
