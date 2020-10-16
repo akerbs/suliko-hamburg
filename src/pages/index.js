@@ -58,7 +58,7 @@ const Press = loadable(() => import('../components/Press'))
 const Contact = loadable(() => import('../components/Contact'))
 const Menu = loadable(() => import('../components/Menu'))
 const CookiesBar = loadable(() => import('../components/cookiesBar'))
-
+const GoogleMap = loadable(() => import('../components/googleMap'))
 
 
 const window = require("global/window")
@@ -319,11 +319,12 @@ useEffect(() => {
         )}
         {showAfterLoading && (
           <Container id="map" className="mapWrapper" maxWidth="lg">
-            <iframe
+          <GoogleMap/>
+            {/* <iframe
               className="map"
               title="map"
               src="https://www.google.com/maps/d/u/0/embed?mid=1UQMf_-g-DjVCWRAkAVCDWjVNGXkvW4xc"
-            ></iframe>
+            ></iframe> */}
           </Container>
         )}
         {showAfterLoading && <Footer />}
