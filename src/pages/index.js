@@ -65,8 +65,16 @@ export default function (props) {
     setShowAfterLoading(true)
   }
 
+useEffect(() => {
+  const timer = setTimeout(() => {
+ startShowAfterLoading()
+  }, 1000);
+  return () => clearTimeout(timer);
+}, []);
+
   useEffect(() => {
-    inView("#slider-first").once("enter", startShowAfterLoading)
+    // inView("#slider-first").once("enter", startShowAfterLoading)
+  // inView.threshold(0.5)
   })
 
   const handleOpen = () => {
