@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `restaurant-suliko.de`,
@@ -31,11 +35,10 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: "UA-176078108-1", // leave empty if you want to disable the tracker
+          trackingId: process.env.GATSBY_GA_TRACKING_ID,
           cookieName: "gatsby-gdpr-google-analytics", // default
           anonymize: true, // default
         },
-        
 
         // googleTagManager: {
         //   trackingId: "YOUR_GOOGLE_TAG_MANAGER_TRACKING_ID", // leave empty if you want to disable the tracker
@@ -57,13 +60,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-anchor-links`,
-   
+
     // In your gatsby-config.js
 
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
-    //     trackingId: "UA-176078108-1",
+    //     trackingId: process.env.GA_TRACKING_ID,
     //     head: true,
     //     anonymize: true,
     //     respectDNT: true,

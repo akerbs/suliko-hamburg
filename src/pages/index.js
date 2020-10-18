@@ -381,7 +381,7 @@ export default function (props) {
             <iframe
               className="map"
               title="map"
-              src="https://www.google.com/maps/d/u/0/embed?mid=1UQMf_-g-DjVCWRAkAVCDWjVNGXkvW4xc"
+              src={process.env.GATSBY_GM}
             ></iframe>
           </Container>
         )}
