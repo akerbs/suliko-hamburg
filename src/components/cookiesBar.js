@@ -8,7 +8,7 @@ export default function CookiesBar() {
 
   return (
     <CookieConsent
-      cookieName="gatsby-gdpr-google-tagmanager"
+      cookieName="gatsby-gdpr-google-analytics"
       location="bottom"
       style={{ background: "rgba(0,0,0, .8)" }}
       buttonText={
