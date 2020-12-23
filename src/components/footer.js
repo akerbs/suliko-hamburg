@@ -3,10 +3,31 @@ import Typography from "@material-ui/core/Typography"
 import Container from "@material-ui/core/Container"
 import Logo2 from "../images/Logo2.png"
 import { Link } from "gatsby"
-import "./footer.css"
+import { makeStyles } from "@material-ui/core/styles"
+
 import Impressum from "./impressum"
 
-const Footer = props => {
+const useStyles = makeStyles(theme => ({
+  footerWrapper: {
+    display: "flex",
+    flexDirection: "column",
+    textAlign: "center",
+    justifyContent: "center",
+    color: "black",
+    marginTop: 50,
+  },
+  logo2Footer: {
+    maxWidth: 120,
+    margin: "0 auto",
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 110,
+    },
+  },
+}))
+
+export default function Footer() {
+  const classes = useStyles()
+
   const [openImpressum, setOpenImpressum] = React.useState(false)
 
   const handleOpenImpressum = () => {
@@ -17,8 +38,11 @@ const Footer = props => {
   }
 
   return (
-    <Container className="footerWrapper" style={{ paddingBottom: "70px" }}>
-      <img src={Logo2} alt="logo" className="logo2Footer" />
+    <Container
+      className={classes.footerWrapper}
+      style={{ paddingBottom: "70px" }}
+    >
+      <img src={Logo2} alt="logo" className={classes.logo2Footer} />
       <Typography variant="body2" style={{ color: "rgba(0, 0, 0, 0.8 )" }}>
         {" © "} {new Date().getFullYear()} Suliko
         <br />{" "}
@@ -65,5 +89,3 @@ const Footer = props => {
     </Container>
   )
 }
-
-export default Footer
