@@ -188,14 +188,24 @@ export default function AboutUs(props) {
             *
           </Typography>{" "}
           {actLanguage === "DEU"
-            ? "Bei Abholung: Mindestbestellwert € 49,90 | Bei Lieferung: € 99,-"
+            ? "Bei Abholung: Mindestbestellwert € 49,90"
             : actLanguage === "RUS"
-            ? "При самовывозе: минимальная сумма заказа 49,90 € | При доставке: € 99, -"
+            ? "При самовывозе: минимальная сумма заказа 49,90 €"
             : actLanguage === "GEO"
-            ? "შეგროვებისთვის: შეკვეთის მინიმალური ღირებულება 49,90 ევრო | ადგილზე მიტანა: 99 ევრო, -"
+            ? "შეგროვებისთვის: შეკვეთის მინიმალური ღირებულება 49,90 ევრო"
             : actLanguage === "ENG"
-            ? "On pickup: minimum order value € 49.90 | On delivery: € 99, -"
-            : "On pickup: minimum order value € 49.90 | On delivery: € 99, -"}
+            ? "On pickup: minimum order value € 49.90"
+            : "On pickup: minimum order value € 49.90"}
+          <br />
+          {actLanguage === "DEU"
+            ? "Bei Lieferung: € 99,-"
+            : actLanguage === "RUS"
+            ? "При доставке: € 99, -"
+            : actLanguage === "GEO"
+            ? "ადგილზე მიტანა: 99 ევრო, -"
+            : actLanguage === "ENG"
+            ? "On delivery: € 99, -"
+            : "On delivery: € 99, -"}
         </Typography>
       </div>
       {/* {actLanguage === "RUS" && (
