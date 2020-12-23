@@ -43,6 +43,7 @@ import { makeStyles } from "@material-ui/core/styles"
 // import ReserveWindow from "../components/ReserveWindow"
 // import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
 import CookiesBar from "../components/cookiesBar"
+import Slide from "@material-ui/core/Slide"
 
 const ReserveWindow = loadable(() => import("../components/ReserveWindow"))
 const ReserveWindowQuandoo = loadable(() =>
@@ -103,9 +104,21 @@ const useStyles = makeStyles(theme => ({
       padding: "100px 15px 10px 15px",
     },
   },
+  title1: {
+    position: "relative",
+    color: "#fff",
+    fontSize: "12em",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "5em",
+    },
+  },
 }))
 
 export default function (props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const classes = useStyles()
 
   const { actLanguage } = useContext(LanguageContext)
@@ -124,6 +137,14 @@ export default function (props) {
     }, 500)
     return () => clearTimeout(timer)
   }, [])
+
+  const [show1, setShow1] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow1(true)
+    }, 1000)
+  })
 
   useEffect(() => {
     // inView("#slider-first").once("enter", startShowAfterLoading)
@@ -236,6 +257,11 @@ export default function (props) {
               </SwiperSlide>
             </Swiper>
           )}
+          {/* <Slide in={show1} timeout={1000} direction="up">
+            <p className={classes.title1} id="title1">
+              Welcome !!!!!!
+            </p>
+          </Slide> */}
         </Container>
         {showAfterLoading && (
           <Container id="center">
