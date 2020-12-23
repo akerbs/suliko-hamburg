@@ -120,7 +120,7 @@ export default function AboutUs(props) {
           style={{
             textDecoration: "none",
             color: "rgba(133,26,29)",
-            fontSize: "bold",
+            fontWeight: "bold",
           }}
         >
           {actLanguage === "DEU"
