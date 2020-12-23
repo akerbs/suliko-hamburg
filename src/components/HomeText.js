@@ -32,7 +32,7 @@ export default function AboutUs(props) {
       <div>
         <Typography
           variant="h6"
-          style={{ color: "rgba(133,26,29)" }}
+          style={{ color: "rgba(133,26,29)", fontWeight: "bold" }}
           align="center"
         >
           {" "}
