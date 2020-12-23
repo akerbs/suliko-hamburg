@@ -251,7 +251,7 @@ export default function (props) {
             />
             <ReserveButton onOpen={handleOpen} />
             <ReserveWindow onClose={handleClose} open={open} />
-            <br /> <br />
+            <br />
             <Container id="home-text">
               <HomeText />
             </Container>

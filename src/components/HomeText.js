@@ -5,11 +5,11 @@ import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginTop: "4%",
+    marginTop: "6%",
     marginBottom: "4%",
 
     [theme.breakpoints.down("xs")]: {
-      marginTop: 0,
+      marginTop: "2%",
     },
   },
   phoneEmailLink: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: "1.5em",
 
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.2em",
+      fontSize: "1.3em",
     },
   },
 }))
