@@ -10,7 +10,7 @@ import SwiperCore, {
   Pagination,
 } from "swiper"
 import "swiper/swiper-bundle.css"
-import "./index.css"
+import "./swiper.css"
 import menu from "../images/menu.png"
 import { Helmet } from "react-helmet"
 import Header from "../components/header"
@@ -39,15 +39,11 @@ import s15 from "../images/s15.jpg"
 import s16 from "../images/s16.jpg"
 import bgV1 from "../images/bgV1.jpg"
 import bgV2 from "../images/bgV2.jpg"
-// import HomeText from "../components/HomeText"
-// import Welcome from "../components/Welcome"
-// import Press from "../components/Press"
-// import Contact from "../components/Contact"
-// import Menu from "../components/Menu"
-
+import { makeStyles } from "@material-ui/core/styles"
 // import ReserveWindow from "../components/ReserveWindow"
 // import ReserveWindowQuandoo from "../components/ReserveWindowQuandoo"
 import CookiesBar from "../components/cookiesBar"
+
 const ReserveWindow = loadable(() => import("../components/ReserveWindow"))
 const ReserveWindowQuandoo = loadable(() =>
   import("../components/ReserveWindowQuandoo")
@@ -63,7 +59,55 @@ const window = require("global/window")
 
 SwiperCore.use([Autoplay, Navigation, EffectFade, Pagination])
 
+const useStyles = makeStyles(theme => ({
+  bgImg: {
+    width: "100%",
+    height: "auto",
+  },
+  mapWrapper: {
+    position: "relative",
+    overflow: "hidden",
+    height: "300px",
+    width: "100%",
+    paddingTop: "50%",
+  },
+  map: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    width: "100%",
+    height: 600,
+    border: "0px",
+    marginTop: -150,
+  },
+  aboutUsWrapper: {
+    paddingTop: 170,
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: 110,
+    },
+  },
+  menuWrapper: {
+    paddingTop: 50,
+    paddingBottom: 150,
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: 10,
+      paddingBottom: 40,
+    },
+  },
+  contactWrapper: {
+    padding: "150px 15px 10px 15px",
+    borderRadius: 10,
+    [theme.breakpoints.down("xs")]: {
+      padding: "100px 15px 10px 15px",
+    },
+  },
+}))
+
 export default function (props) {
+  const classes = useStyles()
+
   const { actLanguage } = useContext(LanguageContext)
   const [open, setOpen] = useState(false)
   const [openQuandoo, setOpenQuandoo] = useState(false)
@@ -221,7 +265,7 @@ export default function (props) {
                 }
                 autoplay
                 loop
-                className="slider"
+                className={classes.slider}
               >
                 <SwiperSlide>
                   {/* <Img
@@ -339,7 +383,7 @@ export default function (props) {
               </Swiper>
             </Container>
             <br /> <br />
-            <Container id="welcome" className="welcomeWrapper">
+            <Container id="welcome" className={classes.welcomeWrapper}>
               <Welcome />
             </Container>
             <br /> <br />
@@ -360,7 +404,7 @@ export default function (props) {
             />
             <br /> <br />
             <br />
-            <Container className="menuWrapper">
+            <Container className={classes.menuWrapper}>
               <Menu />
             </Container>
             <br /> <br />
@@ -371,15 +415,15 @@ export default function (props) {
             />
             <br /> <br />
             <br />
-            <Container id="contact" className="contactWrapper">
+            <Container id="contact" className={classes.contactWrapper}>
               <Contact />
             </Container>
           </Container>
         )}
         {showAfterLoading && (
-          <Container id="map" className="mapWrapper" maxWidth="lg">
+          <Container id="map" className={classes.mapWrapper} maxWidth="lg">
             <iframe
-              className="map"
+              className={classes.map}
               title="map"
               src={process.env.GATSBY_GM}
             ></iframe>
